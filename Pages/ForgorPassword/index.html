@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="../global.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Esqueci minha senha</title>
+</head>
+
+<body>
+  <div class='container'>
+    <header>
+      <div class='headerContainer'>
+        <div class='headerLogo'>
+          <img src="../../Assets/Tela de recuperar senha/cjr.svg" alt="">
+        </div>
+        <div class='headerLinks'>
+          <a href="">Criar Conta</a>
+          <button>Entrar</button>
+        </div>
+      </div>
+    </header>
+    <form>
+      <div class="mainContainer">
+        <img src="../../Assets/Tela de recuperar senha/logoGrande.svg" alt="">
+        <div class='formContainer'>
+          <h1>Bem vindo de volta, <br> fulano! escolha sua <br> nova senha</h1>
+          <div>
+            <label for="password">Senha nova</label>
+            <input type="password" onchange='validatedForm()' id='password' />
+          </div>
+          <div>
+            <label for="confirmPassword">Digite novamente a senha</label>
+            <input type="password" onchange='validatedForm()' id='confirmPassword' />
+          </div>
+          <div class='mainButtons'>
+            <a href="">Possui conta? Acesse aqui!</a>
+            <button type='submit' id='recoverPasswordButton' onclick='handleSubmit()' disabled='true'>CADASTRAR</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+<script>
+  document.getElementById('recoverPasswordButton').addEventListener('click', function (e) {
+    e.preventDefault()
+  })
+
+  function handleSubmit() {
+    const password = document.getElementById('password').value
+
+    const data = {
+      password
+    }
+
+    // document.getElementById('recoverPasswordButton').disabled = true
+
+    console.log('data: ', data)
+  }
+
+  function validatedForm() {
+    document.getElementById('recoverPasswordButton').disabled = !passwordMatches() || !validPassword()
+  }
+
+  function passwordMatches() {
+    const password = document.getElementById('password').value
+    const confirmPassword = document.getElementById('confirmPassword').value
+
+    return password === confirmPassword
+  }
+
+  function validPassword() {
+    const password = document.getElementById('password').value
+    const confirmPassword = document.getElementById('confirmPassword').value
+
+    return password && confirmPassword
+  }
+</script>
+
+</html>
