@@ -1,0 +1,189 @@
+*{ /*Retirando margem*/
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box; /*retira opção de rolagem*/
+    /*overflow: hidden;*/
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+}
+
+body {
+    text-align: left;
+
+    background: #111E3E;
+}
+
+header{
+    display: flex;
+    /* height: 10vh; */
+    padding: 19px 48px;
+    /*width: 100VH;*/
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3em;
+    padding-right: 3em;
+
+    background: #8BC34A;    
+}
+
+button:hover{cursor: pointer;}
+
+.logoHeader{
+    width: 124px;
+    height: 44px;
+    left: 0px;
+    top: 0px;
+    
+    background: #D9D9D9;
+    border-radius: 16px;
+}
+
+.logoHeader img {
+    position: relative;
+    width: 60px;
+    height: 36px;
+    left: 32px;
+    top: 4px;
+}
+
+.linksHeader button{
+    height: 44px;
+    width: 88px;
+    left: 0px;
+    top: 0px;
+    border-radius: 16px;
+    font-weight: bold;
+    border: none;
+
+    color: #FFFFFF;
+    background: #222E50;
+}
+
+.linksHeader a{
+    text-decoration: none; /*retira sublinhado de link*/
+    padding-right: 20px;
+    color:#222E50;
+}
+
+.areaLogin {
+    display: flex; /*para alinhamento de itens*/
+    height: 90vh; /*pegando toda tela*/
+    justify-content: center; /*centralizando*/
+    align-items: center; /*centralizando*/
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 440px;
+    height: 468px;
+    background: #222E50;
+    border-radius: 10px;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.login input{
+    color: #222E50;
+    background: #D9D9D9;
+    border: none; /*retirando borda*/
+    padding-left: 15px; /*espaçamento da borda*/
+    border-radius: 8px;
+    height: 44px;
+    width: 100%;
+
+}
+
+input::placeholder{
+    font-weight: bold;
+    color: #222E50;
+}
+
+/*
+input[name="senha"]{
+    background:url(Imagens/Vector.svg) no-repeat right;
+    background-color: #D9D9D9;
+}
+*/
+
+.olhinho {
+    position: absolute;
+    margin-left: 20rem;
+    background-color: #D9D9D9;
+    border: none;
+    margin-top: 0.5rem;
+}
+.iconEmail {
+    display: flex;
+    align-items: center;
+    background-color: #71767B;
+    border-radius: 8px;
+    margin-top: 20px;    
+    margin-bottom: 20px;
+}
+
+.iconEmailCerto {
+    padding: 0 15px 0 15px;
+}
+
+.iconSenha {
+    display: flex;
+    align-items:center;
+    background-color: #71767B; 
+    border-radius: 8px; 
+}
+
+.iconSenhaCerto {
+    padding: 0 15px 0 15px;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    color: #111E3E;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: none;
+    align-items: center;
+    font-weight: bold;
+    color: #222E50;
+
+    width: 250px;
+    height: 44px;
+    left: 578px;
+    top: 731px;
+
+    background: #D9D9D9;
+    border-radius: 15px;
+}
+
+.iconUser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+    width: 167.97px;    ;
+    height: 158.59px;
+}
