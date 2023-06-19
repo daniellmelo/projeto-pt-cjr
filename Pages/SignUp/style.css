@@ -1,0 +1,107 @@
+body {
+    /* height: 100vh; */
+    background-color: #111E3E;
+    height: 100vh;
+    min-height: 100vh;
+    /*???*/
+}
+
+
+.container {
+
+    height: 100vh;
+    min-height: 100vh;
+    background-color: #111E3E;
+    /*???*/
+
+}
+
+/* HEADER */
+.header-container {
+    background-color: #8BC34A;
+    position: static;   
+    width: 100%;
+    height: 70px;
+}
+
+.header-links {
+    position: absolute;
+    right: 48px;
+    top: 19px;
+}
+
+.header-logo {
+    position: absolute;
+    background-color: #D9D9D9;
+    padding: 4px 32px;
+    border-radius: 16px;
+    left: 5%;
+    top: 1%;
+}
+
+/* Link de criar conta */
+.header-links>a {
+    margin: 5px;
+    color: #222E50;
+
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+/* Botão de entrar */
+.header-links>button {
+    padding: 4px 32px;
+    /* padding top/bottom left/right*/
+    background-color: #222E50;
+    color: white;
+    border-radius: 16px;
+}
+
+/*FORM*/
+
+.main-container {
+    /* position: absolute;
+    right: 30%;
+    top: 120px; */
+    background: #222E50;
+    /* right: 300px; */
+    display: flex;
+    width: 100vw;
+
+}
+
+.mainContainer>img {}
+
+.form-container {
+    /* position: absolute;
+    right: 15%;
+    top:350px; */
+}
+
+.form-container img {
+    margin-bottom: 32px;
+}
+
+.form-container>div {
+    margin-bottom: 15px;
+}
+
+.form-container>div>input {
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    width: 401px;
+    height: 59px;
+    padding-left: 20px;
+}
+
+.form-container-gender {
+    position: relative;
+}
+
+.form-container-gender>img {
+    position: absolute;
+    right: 20px;
+    top: -50%;
+    transform: translateY(50px);
+}

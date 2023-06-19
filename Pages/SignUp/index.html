@@ -1,13 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" type='text/css' href="../global.css">
+    <link rel="stylesheet" type='text/css' href="style.css">
+    <title>SignUp</title>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <div class="header-logo">
+                    <img src="../../Assets/Tela de Cadastro/cjr.svg" alt="">
+                </div>
+                <div class="header-links">
+                    <a href="./index.html">Criar conta</a>
+                    <button>
+                        Entrar
+                    </button>
+                </div>
+            </div>
+        </header>
+    <form method="POST">
+        <div class="main-container">
+            <img src="../../Assets/Tela de Cadastro/logoGrande.svg" alt="">
+            <div class="form-container">
+                <img src="../../Assets/Tela de Cadastro/ph_user-circle-thin.png" alt="">
+                <div>
+                    <input type="text" name="nome" id="input-nome" placeholder="Nome">
+                </div>
+                <div class="form-container-gender">
+                    <input type="text" name="genero" id="input-genero" placeholder="Gênero">
+                    <img src="../../Assets/Tela de Cadastro/mdi_arrow-down-bold-box-outline.png" alt="" >
+                </div>
+                <div>
+                    <input type="text" name="cargo" id="input-cargo" placeholder="Cargo">
+                </div>
+                <div>
+                    <input type="text" name="email" id="input-email" placeholder="Email">
+                </div>
+                <div>
+                    <input type="text" name="senha" id="input-senha" placeholder="Senha">
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>
     
 </body>
 </html>
