@@ -58,26 +58,80 @@ body {
     border-radius: 16px;
 }
 
-/*FORM*/
+/*Form*/
 
-.main-container {
-    /* position: absolute;
-    right: 30%;
-    top: 120px; */
-    background: #111E3E
-    ;
-    /* right: 300px; */
-    display: flex;
-    width: 100vw;
+
+#main-img{
+    
+}
+
+ #form-container {
+    position: relative;
+    left: -10px;
+    display: inline-block;
+    background-color: #222E50;
+    top: 84px;
+    border-radius: 10px;
+    width: 547px;
+    height: 723px;
+    padding: 15px 73px;
+ }
+ #form-container > form > img {
+    left: 25%;
+    position: relative;
+ }
+ #form-container > form > div > input{
+    display: block;
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    width: 401px;
+    height: 59px;
+    padding-left: 20px;
+    margin: 15px;
+ }
+
+ #form-input-container{
+    margin-top: 15px;
+ }
+
+#signup-button-form{
+    position: relative;
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    width: 283px;
+    height: 50px;
+    left: 20%;
+    margin-top: 17px;
+} 
+
+#textLogin > a{
+    color:#111E3E;
+    position: relative;
+    left: 30%;
+    
 
 }
+
+/*FORM*/
+
+/* .main-container {
+    /* position: absolute;
+    right: 30%;
+    top: 120px; 
+    background: #111E3E
+    ;
+    /* right: 300px; 
+    display: flex;
+    width: 100vw; 
+
+} 
 
 .mainContainer>img {}
 
 .form-container {
     /* position: absolute;
     right: 15%;
-    top:350px; */
+    top:350px; 
 }
 
 .form-container img {
@@ -105,4 +159,4 @@ body {
     right: 20px;
     top: -50%;
     transform: translateY(50px);
-}
+}*/
