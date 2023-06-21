@@ -116,8 +116,8 @@ form {
 
   border-radius: 10px;
 
-  width: 550px;
-  height: 720px;
+  width: 547px;
+  height: 723px;
 
   padding: 110px 73px 94px 73px;
 }
@@ -173,16 +173,18 @@ form {
 
 .formContainer input {
 
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #111E3E;
+  background-color: #D9D9D9;
+
   height: 66px;
+
+  padding: 0px 15px;
 
   border-radius: 15px;
   border: 0;
-
-  padding-left: 15px;
-
-  font-size: 16px;
-
-  background-color: #D9D9D9;
 }
 
 
