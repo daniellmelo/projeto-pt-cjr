@@ -22,7 +22,7 @@
           <img src="../../Assets/Tela de recuperar senha/cjr.svg" alt="">
         </div>
         <div class='headerLinks'>
-          <a href="">Criar Conta</a>
+          <a href="../SignUp/index.html">Criar Conta</a>
           <button>Entrar</button>
         </div>
       </div>
@@ -32,16 +32,18 @@
         <img src="../../Assets/Tela de recuperar senha/logoGrande.svg" alt="">
         <div class='formContainer'>
           <h1>Bem vindo de volta, <br> fulano! escolha sua <br> nova senha</h1>
-          <div>
+          <div class='inputContainer'>
             <label for="password">Senha nova</label>
             <input type="password" onchange='validatedForm()' id='password' />
+            <span class='errorMessage' id='passwordErrorMessage'>Campo obrigatório.</span>
           </div>
-          <div>
+          <div class='inputContainer'>
             <label for="confirmPassword">Digite novamente a senha</label>
             <input type="password" onchange='validatedForm()' id='confirmPassword' />
+            <span class='errorMessage' id='confirmPasswordErrorMessage'>Campo obrigatório.</span>
           </div>
           <div class='mainButtons'>
-            <a href="">Possui conta? Acesse aqui!</a>
+            <p>Possui conta? <a href="../Login/index.html"> Acesse aqui!</a></p>
             <button type='submit' id='recoverPasswordButton' onclick='handleSubmit()' disabled='true'>CADASTRAR</button>
           </div>
         </div>
@@ -49,40 +51,5 @@
     </form>
   </div>
 </body>
-<script>
-  document.getElementById('recoverPasswordButton').addEventListener('click', function (e) {
-    e.preventDefault()
-  })
-
-  function handleSubmit() {
-    const password = document.getElementById('password').value
-
-    const data = {
-      password
-    }
-
-    // document.getElementById('recoverPasswordButton').disabled = true
-
-    console.log('data: ', data)
-  }
-
-  function validatedForm() {
-    document.getElementById('recoverPasswordButton').disabled = !passwordMatches() || !validPassword()
-  }
-
-  function passwordMatches() {
-    const password = document.getElementById('password').value
-    const confirmPassword = document.getElementById('confirmPassword').value
-
-    return password === confirmPassword
-  }
-
-  function validPassword() {
-    const password = document.getElementById('password').value
-    const confirmPassword = document.getElementById('confirmPassword').value
-
-    return password && confirmPassword
-  }
-</script>
-
+<script src='./index.js'></script>
 </html>
