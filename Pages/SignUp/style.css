@@ -1,75 +1,101 @@
+@font-face {
+    font-family: 'inter';
+    src: url('../../Assets/Font/static/Inter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    /* Colors */
+    --azul_primario:#111E3E;
+    --azul_secundario: #222E50;
+    --branco:#D9D9D9;
+    --verde:#8BC34A;
+
+    /* Font */
+    --nav_font: 'inter', sans-serif;
+}
+
 body {
-    /* height: 100vh; */
-    background-color: #111E3E;
+    background-color: var(--azul_primario);
     height: 100vh;
     min-height: 100vh;
-    /*???*/
 }
 
 
-.container {
 
-    height: 100vh;
-    min-height: 100vh;
-    background-color: #111E3E;
-    /*???*/
-
-}
-
-/* HEADER */
-.header-container {
-    background-color: #8BC34A;
-    position: static;   
-    width: 100%;
-    height: 70px;
-}
-
-.header-links {
-    position: absolute;
-    right: 48px;
-    top: 19px;
+/* ---- HEADER ---- */
+header {
+    background-color: var(--verde);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 30px 10%;
+    width: 100vw;
+    height: 5.375em;
 }
 
 .header-logo {
+    background-color: var(--branco);
     position: absolute;
-    background-color: #D9D9D9;
+    align-items: center;
     padding: 4px 32px;
     border-radius: 16px;
     left: 5%;
-    top: 1%;
 }
 
-/* Link de criar conta */
-.header-links>a {
-    margin: 5px;
-    color: #222E50;
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 18px;
+}
 
+.header-login-bt, nav > a{
+    color: var(--branco);
     font-size: 16px;
     font-weight: 700;
+    line-height: 19.36px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
 
+}
+
+
+/* Link de criar conta */
+.header-links > a {
+    color: #222E50;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 /* Botão de entrar */
-.header-links>button {
-    padding: 4px 32px;
-    /* padding top/bottom left/right*/
-    background-color:#222E50;
-    color: white;
+.header-login-bt{
+    background-color:var(--azul_secundario);
+    height: 48px;
+    width: 92px;
     border-radius: 16px;
+    outline: none;
 }
 
-/*Form*/
+.header-login-bt > a {
+    color: var(--branco);
+}
+/* ---------------- */
 
 
+/* ---- MAIN & FORM ---- */
 #main-img{
-    
 }
 
  #form-container {
+    background-color: var(--azul_secundario);
     position: relative;
     left: -10px;
     display: inline-block;
-    background-color: #222E50;
+    
     top: 84px;
     border-radius: 10px;
     width: 547px;
@@ -81,8 +107,8 @@ body {
     position: relative;
  }
  #form-container > form > div > input{
+    background-color: var(--branco);
     display: block;
-    background-color: #D9D9D9;
     border-radius: 15px;
     width: 401px;
     height: 59px;
@@ -95,8 +121,8 @@ body {
  }
 
 #signup-button-form{
+    background-color: var(--branco);
     position: relative;
-    background-color: #D9D9D9;
     border-radius: 15px;
     width: 283px;
     height: 50px;
@@ -105,58 +131,9 @@ body {
 } 
 
 #textLogin > a{
-    color:#111E3E;
+    color:var(--branco);
     position: relative;
     left: 30%;
-    
-
 }
 
-/*FORM*/
-
-/* .main-container {
-    /* position: absolute;
-    right: 30%;
-    top: 120px; 
-    background: #111E3E
-    ;
-    /* right: 300px; 
-    display: flex;
-    width: 100vw; 
-
-} 
-
-.mainContainer>img {}
-
-.form-container {
-    /* position: absolute;
-    right: 15%;
-    top:350px; 
-}
-
-.form-container img {
-    margin-bottom: 32px;
-}
-
-.form-container>div {
-    margin-bottom: 15px;
-}
-
-.form-container>div>input {
-    background-color: #D9D9D9;
-    border-radius: 15px;
-    width: 401px;
-    height: 59px;
-    padding-left: 20px;
-}
-
-.form-container-gender {
-    position: relative;
-}
-
-.form-container-gender>img {
-    position: absolute;
-    right: 20px;
-    top: -50%;
-    transform: translateY(50px);
-}*/
+/* ----------------------- */
