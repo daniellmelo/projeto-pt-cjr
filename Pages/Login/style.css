@@ -1,5 +1,5 @@
 *{ 
-    margin: 0; /*Retirando margem*/
+    margin: 0; 
     padding: 0;
 
     font-family: 'Inter';
@@ -144,7 +144,7 @@ header{
     height: 59px;
     width: 100%;
 
-    /*outline: none; utline para retirar borda de seleçao */
+    /*outline: none; para retirar borda de seleçao */
 }
 
 ::placeholder {
@@ -206,7 +206,7 @@ header{
 }
 
 .links a {
-    color: #111E3E;
+    color: #FFFFFF;
 
     margin-top: 25px;
 

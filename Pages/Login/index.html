@@ -17,7 +17,7 @@
         <div class="headerContainer">
             <div class="logoHeader">
                 <a href="/Pages/Login/index.html">
-                    <img src="../../Assets/Tela de Login/cjr.svg" alt="">
+                    <img src="/Assets/telaDeLogin/cjr.svg" alt="">
                 </a>
             </div>
             <div class="linksHeader">
@@ -31,50 +31,34 @@
     <form class="sectionLogin">
         <div class="login">
             <div class="iconUser">
-                <img src="../../Assets/Tela de Login/user-login.svg" alt="">
+                <img src="/Assets/telaDeLogin/user-login.svg" alt="">
             </div>
 
             <div class="inputGroup">
                 <div class="emailContainer">
                     <div class="iconEmail">
-                        <img src="../../Assets/Tela de Login/login.svg" alt="">
+                        <img src="/Assets/telaDeLogin/login.svg" alt="">
                     </div>
                     <input type="text" name="nome" placeholder="Login" autofocus id="inputEmail">
                 </div>
                 <div class="passwordContainer">
                     <div class="iconPassword">
-                        <img src="../../Assets/Tela de Login/senha.svg" alt="">
+                        <img src="/Assets/telaDeLogin/senha.svg" alt="">
                     </div>
                     <div class="passwordGroup">
                         <input type="password" name="senha" placeholder="Senha" id="inputPassword">
-                        <img src="../../Assets/Tela de Login/eye.svg" alt="" id="togglePassword" onclick="showHide()">
+                        <img src="/Assets/telaDeLogin/eye.svg" alt="" id="togglePassword" onclick="showHide()">
                     </div>
                 </div>
             </div>
             <div class="links">
-                <a href="../ForgorPassword/index.html">Esqueceu a senha?</a>
+                <a href="/Pages/ForgorPassword/index.html">Esqueceu a senha?</a>
                 <div>
                     <button>Entrar</button>
                 </div>
             </div>
         </div>
-    </form>
-
-    <script>
-        function showHide() {
-
-            const passwordInput = document.getElementById("inputPassword");
-            const eyeIcon = document.getElementById("togglePassword");
-
-            if (passwordInput.type === "password") {
-                passwordInput.type = "text";
-                eyeIcon.src = "../../Assets/Tela de Login/Vector.svg"; // Altera a imagem para o olho fechado
-            } else {
-                passwordInput.type = "password";
-                eyeIcon.src = "../../Assets/Tela de Login/eye.svg"; // Altera a imagem para o olho aberto
-            }
-        }
-    </script>
+    </form>    
 </body>
-
+    <script src="/Pages/Login/index.js"></script>
 </html>
