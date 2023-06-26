@@ -65,7 +65,7 @@ nav {
 
 /* Link de criar conta */
 .header-links > a {
-    color: #222E50;
+    color: var(--azul_secundario);
     margin: 5px;
     font-size: 16px;
     font-weight: 700;
@@ -87,8 +87,7 @@ nav {
 
 
 /* ---- MAIN & FORM ---- */
-#main-img{
-}
+
 
  #form-container {
     background-color: var(--azul_secundario);
@@ -106,7 +105,7 @@ nav {
     left: 25%;
     position: relative;
  }
- #form-container > form > div > input{
+ .form-input{
     background-color: var(--branco);
     display: block;
     border-radius: 15px;
@@ -114,20 +113,41 @@ nav {
     height: 59px;
     padding-left: 20px;
     margin: 15px;
+    border: none;
  }
 
+ ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    font-family: var(--nav_font);
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+    font-family: var(--nav_font);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
+    font-family: var(--nav_font);
+  }
+
+#select-gender option[data-default]{
+    color: #888;
+
+}
  #form-input-container{
     margin-top: 15px;
  }
 
 #signup-button-form{
     background-color: var(--branco);
+    font-family: var(--nav_font);
     position: relative;
     border-radius: 15px;
     width: 283px;
     height: 50px;
     left: 20%;
     margin-top: 17px;
+    border: none;
 } 
 
 #textLogin > a{
