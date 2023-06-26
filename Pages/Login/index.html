@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,41 +12,46 @@
     <!--<link rel="stylesheet" href="../global.css"> Pq linkar com a global?-->
     <title>Tela de Login</title>
 </head>
+
 <body>
     <header>
-        <div class="logoHeader">
-            <img src="../../Assets/Tela de login/cjr.svg" alt="">
-        </div>
-        <div class="linksHeader">
-            <a href="#">Criar Conta</a>
-            <!--<a href="#">Entrar</a>-->
-            <button>Entrar</button>
+        <div class="headerContainer">
+            <div class="logoHeader">
+                <a href="/Pages/Login/index.html">
+                    <img src="../../Assets/Tela de Login/cjr.svg" alt="">
+                </a>
+            </div>
+            <div class="linksHeader">
+                <a href="/Pages/SignUp/index.html">Criar Conta</a>
+                <!--<a href="#">Entrar</a>-->
+                <button>Entrar</button>
+            </div>
         </div>
     </header>
 
-    <section class="areaLogin">
+    <form class="sectionLogin">
         <div class="login">
             <div class="iconUser">
-                <img src="../../Assets/Tela de login/user-login.svg" alt="">
+                <img src="../../Assets/Tela de Login/user-login.svg" alt="">
             </div>
 
-            <form class="entradas">
-                <div class="iconEmail">
-                    <div class="iconEmailCerto">
-                        <img src="../../Assets/Tela de login/login.svg" alt="">
+            <div class="inputGroup">
+                <div class="emailContainer">
+                    <div class="iconEmail">
+                        <img src="../../Assets/Tela de Login/login.svg" alt="">
                     </div>
-                    <input type="text" name="nome" placeholder="Login" autofocus>
+                    <input type="text" name="nome" placeholder="Login" autofocus id="inputEmail">
                 </div>
-                <div class="iconSenha">
-                    <div class="iconSenhaCerto">
-                        <img src="../../Assets/Tela de login/senha.svg" alt="">
+                <div class="passwordContainer">
+                    <div class="iconPassword">
+                        <img src="../../Assets/Tela de Login/senha.svg" alt="">
                     </div>
-                    <button class="olhinho">
-                        <img src="../../Assets/Tela de login/Vector.svg" alt="">
-                    </button>
-                    <input type="text" name="senha" placeholder="Senha" autofocus>
+                    <div class="passwordGroup">
+                        <input type="password" name="senha" placeholder="Senha" id="inputPassword">
+                        <img src="../../Assets/Tela de Login/eye.svg" alt="" id="togglePassword" onclick="showHide()">
+                    </div>
                 </div>
-            </form>
+            </div>
             <div class="links">
                 <a href="../ForgorPassword/index.html">Esqueceu a senha?</a>
                 <div>
@@ -53,7 +59,23 @@
                 </div>
             </div>
         </div>
-    </section>
-    
+    </form>
+
+    <script>
+        function showHide() {
+
+            const passwordInput = document.getElementById("inputPassword");
+            const eyeIcon = document.getElementById("togglePassword");
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                eyeIcon.src = "../../Assets/Tela de Login/Vector.svg"; // Altera a imagem para o olho fechado
+            } else {
+                passwordInput.type = "password";
+                eyeIcon.src = "../../Assets/Tela de Login/eye.svg"; // Altera a imagem para o olho aberto
+            }
+        }
+    </script>
 </body>
+
 </html>

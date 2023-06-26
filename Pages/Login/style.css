@@ -1,159 +1,220 @@
-*{ /*Retirando margem*/
-    margin: 0;
+*{ 
+    margin: 0; /*Retirando margem*/
     padding: 0;
-    /*box-sizing: border-box; /*retira opção de rolagem*/
-    /*overflow: hidden;*/
+
     font-family: 'Inter';
     font-style: normal;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 19px;
-    letter-spacing: 0em;
+    /*line-height: 19px; */
+    /* text-align: left; */
 }
 
-body {
-    text-align: left;
+button:hover{cursor: pointer;} /*Cursor sobre os botões*/
 
-    background: #111E3E;
+body {
+    display: flex;
+    flex-direction: column;
+    /* overflow-x: hidden; */
+
+    min-height: 100vh;
+
+    background-color: #111E3E;
 }
 
 header{
     display: flex;
-    /* height: 10vh; */
+    justify-content: center;
+    
     padding: 19px 48px;
-    /*width: 100VH;*/
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 3em;
-    padding-right: 3em;
+    height: 86px;
 
-    background: #8BC34A;    
+    background: #8BC34A;
 }
 
-button:hover{cursor: pointer;}
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100vw;
+    max-width: 1440px;
+}
 
 .logoHeader{
-    width: 124px;
-    height: 44px;
-    left: 0px;
-    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
-    background: #D9D9D9;
+    padding: 4px 32px;
     border-radius: 16px;
+  
+    background: #D9D9D9;
 }
 
-.logoHeader img {
-    position: relative;
-    width: 60px;
-    height: 36px;
-    left: 32px;
-    top: 4px;
+.linksHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 18px;
+
+    white-space: nowrap;
 }
 
 .linksHeader button{
-    height: 44px;
-    width: 88px;
-    left: 0px;
-    top: 0px;
+    
+    width: 92px;
+    height: 48px;
     border-radius: 16px;
-    font-weight: bold;
     border: none;
+    /* padding: 15px 22px; */
+
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    /* font-weight: bold; */
 
     color: #FFFFFF;
     background: #222E50;
 }
 
 .linksHeader a{
+    font-size: 16px;
+    font-weight: 700;
+
     text-decoration: none; /*retira sublinhado de link*/
-    padding-right: 20px;
+    
     color:#222E50;
 }
 
-.areaLogin {
-    display: flex; /*para alinhamento de itens*/
-    height: 90vh; /*pegando toda tela*/
-    justify-content: center; /*centralizando*/
-    align-items: center; /*centralizando*/
+.sectionLogin {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+    padding: 0px 48px;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .login {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 440px;
-    height: 468px;
-    background: #222E50;
+
+    width: 100vw;
+    max-width: 1440px;
+
+    width: 547px;
+    height: 605px;
     border-radius: 10px;
+
+    background-color: #222E50;  
 }
 
-.login form {
+.inputGroup {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    margin-top: 10px;
 }
 
-.login input{
-    color: #222E50;
-    background: #D9D9D9;
-    border: none; /*retirando borda*/
-    padding-left: 15px; /*espaçamento da borda*/
-    border-radius: 8px;
-    height: 44px;
+.iconUser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 36px;
+    margin-bottom: 36px;
+
+    width: 215px;
+    height: 203px;
+}
+
+.inputGroup input {
+    color: #111E3E;
+    background-color: #D9D9D9;
+
+    font-size: 16px;
+    font-weight: 700;
+    
+    border: none;
+    border-radius: 15px;
+
+    padding: 0px 15px; 
+
+    height: 59px;
     width: 100%;
 
+    /*outline: none; utline para retirar borda de seleçao */
 }
 
-input::placeholder{
-    font-weight: bold;
-    color: #222E50;
+::placeholder {
+    opacity: 0.7;
 }
 
-/*
-input[name="senha"]{
-    background:url(Imagens/Vector.svg) no-repeat right;
-    background-color: #D9D9D9;
-}
-*/
-
-.olhinho {
-    position: absolute;
-    margin-left: 20rem;
-    background-color: #D9D9D9;
-    border: none;
-    margin-top: 0.5rem;
-}
-.iconEmail {
+.emailContainer {
     display: flex;
     align-items: center;
+
     background-color: #71767B;
-    border-radius: 8px;
-    margin-top: 20px;    
-    margin-bottom: 20px;
+    
+    border-radius: 15px;
+    width: 400px;
+
+    margin-bottom: 30px;
 }
 
-.iconEmailCerto {
+.iconEmail {
     padding: 0 15px 0 15px;
 }
 
-.iconSenha {
+.passwordContainer {
     display: flex;
-    align-items:center;
+    align-items:center; 
+
     background-color: #71767B; 
-    border-radius: 8px; 
+    border-radius: 15px; 
 }
 
-.iconSenhaCerto {
+.iconPassword {
     padding: 0 15px 0 15px;
 }
 
-.links {
-    margin-top: 20px;
+.passwordGroup {
+    display: flex;
+    align-items: center;
+    /* justify-content: right; */
+
+    /*A borda de seleção do input da senha será menor, 
+    considerando que o ícone do olho ocupa um espaço na lateral direita*/
+    width: 100%;
+    border-radius: 15px;
+
+    background: #D9D9D9;
+}
+
+#togglePassword {
+    cursor:pointer;
+
+    display: flex;
+    margin-right: 1em;
+    /* padding-left: 1em; */
+
+    width: 24px;
+    height: 24px;
+
+    background-color: #D9D9D9;
 }
 
 .links a {
     color: #111E3E;
-    font-weight: bold;
+
+    margin-top: 25px;
+
+    font-size: 16px;
+    font-weight: 700;
+    /*font-weight: bold; */
+    text-decoration: underline;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,28 +223,20 @@ input[name="senha"]{
 .links button {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    border-radius: 8px;
+    align-items: center;
+
+    margin-top: 25px;
     border: none;
-    align-items: center;
-    font-weight: bold;
-    color: #222E50;
 
-    width: 250px;
-    height: 44px;
-    left: 578px;
-    top: 731px;
+    font-size: 16px;
+    font-weight: 700;
+    /* font-weight: bold; */
 
-    background: #D9D9D9;
     border-radius: 15px;
-}
 
-.iconUser {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
+    width: 283px;
+    height: 50px;
 
-    width: 167.97px;    ;
-    height: 158.59px;
+    color: #222E50;
+    background: #D9D9D9;
 }
