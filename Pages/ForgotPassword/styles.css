@@ -162,7 +162,7 @@ form {
 }
 
 .formContainer a {
-  color: #111E3E;
+  color: #fff;
 
   text-decoration: underline;
 }
@@ -238,6 +238,11 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.mainButtons p {
+  color: white;
+  opacity: 0.7;
 }
 
 @media screen and (max-width: 1265px) {
