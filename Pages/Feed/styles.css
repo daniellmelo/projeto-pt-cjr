@@ -1,0 +1,199 @@
+* {
+  font-family: 'Inter';
+  font-style: normal;
+}
+
+body {
+  background-color: #111E3E;
+
+  min-height: 100%;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 86px;
+
+  padding: 19px 48px;
+
+  background-color: #8BC34A;
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100vw;
+  max-width: 1440px;
+}
+
+.headerLogo {
+  padding: 4px 32px;
+
+  border-radius: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #D9D9D9;
+}
+
+.headerLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 18px;
+
+  white-space: nowrap;
+}
+
+.headerLinks a {
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #222E50;
+}
+
+.headerLinks button {
+  background-color: #222E50;
+  color: #FFFFFF;
+
+  width: 92px;
+  height: 48px;
+  border-radius: 16px;
+
+  border: 0;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.headerLinks button:hover {
+  cursor: pointer;
+}
+
+
+/* SECTION */
+
+.sectionContainer {
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 100vw;
+  min-height: calc(100vh - 86px);
+  max-width: 646px;
+
+  border-right: 1px solid #7E7E7E;
+  border-left: 1px solid #7E7E7E;
+
+  padding: 0px 8px;
+
+  position: relative;
+}
+
+.postContainer:nth-child(1) {
+  margin-top: 20px;
+}
+
+.postContainer {
+  display: flex;
+
+  background-color: #222E50;
+
+  border-radius: 32px;
+
+  margin-bottom: 20px;
+
+  padding: 24px 16px;
+
+  scrollbar-color: red;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.postContainer>img {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+
+  margin-right: 11px;
+
+  margin-top: 16px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  margin-top: 30px;
+}
+
+.postUserInfo {
+  display: flex;
+
+  align-items: center;
+
+  margin-bottom: 18px;
+
+  /* position: absolute; */
+
+  /* gap: 4px; */
+}
+
+.postUserInfo>p {
+  font-size: 15px;
+  font-weight: 700;
+
+  color: #fff;
+}
+
+.divisor {
+  margin: 0px 4px;
+}
+
+.postUserInfo>span {
+  font-size: 15px;
+  font-weight: 500;
+
+  color: #71767B;
+}
+
+.post p {
+  max-width: 500px;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  color: #fff;
+
+}
+
+.post>img {
+  width: 18px;
+  height: 18px;
+}
+
+.post>img:hover{
+  cursor: pointer;
+}
+
+.userPost {
+  margin-bottom: 12px;
+}
