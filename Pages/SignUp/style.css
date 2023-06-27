@@ -20,6 +20,7 @@ body {
     background-color: var(--azul_primario);
     height: 100vh;
     min-height: 100vh;
+    
 }
 
 
@@ -87,34 +88,51 @@ nav {
 
 
 /* ---- MAIN & FORM ---- */
+#main-container{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+    min-width: 320px;
+    
+}
+
+
+@media screen and (max-width:800px) {
+    #main-img{
+        display: none;
+    }
+    
+}
 
 
  #form-container {
     background-color: var(--azul_secundario);
-    position: relative;
-    left: -10px;
-    display: inline-block;
-    
-    top: 84px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
     border-radius: 10px;
     width: 547px;
     height: 723px;
-    padding: 15px 73px;
  }
- #form-container > form > img {
-    left: 25%;
-    position: relative;
+
+
+ #form-input-container{
+    display: flex;
+    flex-direction: column;
  }
+
+
  .form-input{
     background-color: var(--branco);
-    display: block;
     border-radius: 15px;
     width: 401px;
     height: 59px;
     padding-left: 20px;
-    margin: 15px;
     border: none;
+    margin: 5px;
  }
+
 
  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: black;
@@ -132,28 +150,23 @@ nav {
 
 #select-gender option[data-default]{
     color: #888;
+}
+
+#textLogin > a{
+    color:var(--branco);
 
 }
- #form-input-container{
-    margin-top: 15px;
- }
+
 
 #signup-button-form{
     background-color: var(--branco);
     font-family: var(--nav_font);
-    position: relative;
     border-radius: 15px;
     width: 283px;
     height: 50px;
-    left: 20%;
-    margin-top: 17px;
     border: none;
 } 
 
-#textLogin > a{
-    color:var(--branco);
-    position: relative;
-    left: 30%;
-}
+
 
 /* ----------------------- */
