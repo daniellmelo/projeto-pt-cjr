@@ -110,13 +110,15 @@ section {
 .postContainer {
   display: flex;
 
+  position: relative;
+
   background-color: #222E50;
 
   border-radius: 32px;
 
   margin-bottom: 20px;
 
-  padding: 24px 16px;
+  padding: 30px 16px;
 
   scrollbar-color: red;
 }
@@ -133,7 +135,11 @@ section {
 
   margin-right: 11px;
 
-  margin-top: 16px;
+  /* margin-top: 16px; */
+
+  position: absolute;
+  top: 16px;
+  left: 24px;
 }
 
 .post {
@@ -142,7 +148,9 @@ section {
 
   justify-content: center;
 
-  margin-top: 30px;
+  /* margin-top: 30px; */
+
+  margin-left: 70px;
 }
 
 .postUserInfo {
@@ -157,7 +165,7 @@ section {
   /* gap: 4px; */
 }
 
-.postUserInfo>p {
+.postUserInfo .userName {
   font-size: 15px;
   font-weight: 700;
 
@@ -175,14 +183,16 @@ section {
   color: #71767B;
 }
 
-.post p {
+.post .userPost {
   max-width: 500px;
 
   font-size: 15px;
   font-weight: 500;
 
   color: #fff;
+  margin-bottom: 12px;
 
+  flex-shrink: 0;
 }
 
 .post>img {
@@ -192,8 +202,4 @@ section {
 
 .post>img:hover{
   cursor: pointer;
-}
-
-.userPost {
-  margin-bottom: 12px;
 }
