@@ -112,6 +112,7 @@ main{
     color: white;
     display: flex;
     flex-direction: column;
+    
 
 }
 
@@ -123,7 +124,8 @@ main{
 .profile-picture-container > img{
     border-radius: 150px;
     position: absolute;
-    top:60px;
+    top:160px;
+    
 }
 
 
