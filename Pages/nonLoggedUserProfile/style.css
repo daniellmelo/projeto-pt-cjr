@@ -11,6 +11,7 @@
     --azul_secundario: #222E50;
     --branco:#D9D9D9;
     --verde:#8BC34A;
+    --cinza:#7E7E7E;
 
     /* Font */
     --nav_font: 'inter', sans-serif;
@@ -112,6 +113,8 @@ main{
     color: white;
     display: flex;
     flex-direction: column;
+    position: relative;
+    
     
 
 }
@@ -124,8 +127,53 @@ main{
 .profile-picture-container > img{
     border-radius: 150px;
     position: absolute;
-    top:160px;
+    left:67px;
+    bottom: 35%;
+}
+
+
+
+.profile-description{
+
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    gap: 5px;
+    margin-top: 15%;
+    margin-left: 12%;
+    padding-bottom: 25px;
+    align-items: flex-start;
     
+
+}
+.profile-description > img{
+    width: 24px;
+    display: flex;
+    
+}
+
+#profile-ocuppation-icon{
+    display: flex;
+    
+}
+
+.profile-occupation{
+    display: flex;
+    column-gap: 13px;
+    
+}
+
+.profile-email{
+    display: flex;
+    column-gap: 13px;
+}
+
+
+#profile-username{
+    font-family: var(--nav_font);
+    color: var(--branco);
+    font-size: 20px;
+    font-weight: 700;
 }
 
 
