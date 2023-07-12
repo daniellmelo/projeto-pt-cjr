@@ -67,10 +67,10 @@ function getUserList() {
   posts.forEach(post => {
 
     const image = document.createElement("img")
-    image.src = "../../Assets/feedComPostAberto/foto.png"
+    image.src = "../../../Assets/feedComPostAberto/foto.png"
 
     const commentImage = document.createElement("img")
-    commentImage.src = "../../Assets/feedComPostAberto/Vector (1).svg"
+    commentImage.src = "../../../Assets/feedComPostAberto/Vector (1).svg"
 
     const postDiv = document.createElement("div")
     postDiv.classList.add("postContainer")

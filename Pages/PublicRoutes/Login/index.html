@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../../global.css">
     <title>Tela de Login</title>
 </head>
 
@@ -16,19 +16,19 @@
     <header>
         <div class="headerContainer">
             <div class="logoHeader">
-                <a href="/Pages/Login/index.html">
+                <a href="/Pages/PublicRoutes/Login">
                     <img src="/Assets/telaDeLogin/cjr.svg" alt="">
                 </a>
             </div>
             <div class="linksHeader">
-                <a href="/Pages/SignUp/index.html">Criar Conta</a>
+                <a href="/Pages/PublicRoutes/SignUp/index.html">Criar Conta</a>
                 <!--<a href="#">Entrar</a>-->
                 <button>Entrar</button>
             </div>
         </div>
     </header>
 
-    <form class="sectionLogin">
+    <form class="sectionLogin" onsubmit='handleLogin()'>
         <div class="login">
             <div class="iconUser">
                 <img src="/Assets/telaDeLogin/user-login.svg" alt="">
@@ -52,13 +52,13 @@
                 </div>
             </div>
             <div class="links">
-                <a href="/Pages/ForgotPassword/index.html">Esqueceu a senha?</a>
+                <a href="/Pages/PublicRoutes/ForgotPassword/">Esqueceu a senha?</a>
                 <div>
-                    <button>Entrar</button>
+                    <button id='loginButton' type='submit' onclick='handleLogin()'>Entrar</button>
                 </div>
             </div>
         </div>
     </form>    
 </body>
-    <script src="/Pages/Login/index.js"></script>
+    <script src="/Pages/PublicRoutes/Login/index.js"></script>
 </html>
