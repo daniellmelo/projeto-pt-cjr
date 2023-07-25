@@ -2,14 +2,27 @@ document.getElementById('recoverPasswordButton').addEventListener('click', funct
   e.preventDefault()
 })
 
-function handleSubmit() {
+async function handleSubmit() {
   const password = document.getElementById('password').value
 
   const data = {
     password
   }
 
-  console.log('data: ', data)
+  try {
+    const response = await fetch('http://localhost:3000/reset-password', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    });
+
+    const { message } = await response.json();
+    alert(message); // Exibe uma mensagem de sucesso após a redefinição de senha
+  } catch (error) {
+    console.log({ message: error.message });
+  }
 }
 
 function validatedForm() {
